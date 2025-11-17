@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+body {
+  background: #f5f6fa; 
+  color: #2e2e2e;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 70px auto 90px auto;
+  padding: 0 22px;
+}
+
+.contato {
+  background: #ffffff;
+  padding: 55px 50px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
+  animation: fadeUp 0.45s ease forwards;
+  border: 1px solid #ececec;
+}
+
+.contato h2 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #3d2cb4;
+  letter-spacing: -0.6px;
+  margin-bottom: 10px;
+}
+
+.contato > p {
+  font-size: 1.08rem;
+  color: #555;
+  margin-bottom: 32px;
+}
+
+.contato-form .form-group {
+  margin-bottom: 25px;
+}
+
+label {
+  display: block;
+  margin-bottom: 7px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #4b4b4b;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 15px 18px;
+  font-size: 1.05rem;
+  border-radius: 14px;
+  border: 1.8px solid #ddd;
+  background: #fbfbff;
+  transition: all 0.25s ease;
+}
+
+input:hover,
+textarea:hover {
+  border-color: #c7c7ff;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #3d2cb4;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(61, 44, 180, 0.18);
+}
+
+.btn-enviar {
+  width: 100%;
+  padding: 15px;
+  margin-top: 10px;
+  font-size: 1.15rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  background: linear-gradient(90deg, #3d2cb4, #5f42ff);
+  color: #fff;
+  transition: all 0.25s ease;
+  letter-spacing: 0.3px;
+  box-shadow: 0 6px 16px rgba(80, 60, 200, 0.25);
+}
+
+.btn-enviar:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 22px rgba(80, 60, 200, 0.33);
+}
+
+.btn-enviar:active {
+  transform: translateY(0px);
+  box-shadow: none;
+}
+
+
+.email-contato {
+  text-align: center;
+  margin-top: 32px;
+  font-size: 1.05rem;
+}
+
+.email-contato a {
+  color: #3d2cb4;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.email-contato a:hover {
+  text-decoration: underline;
+  opacity: 0.85;
+}
+
+
+@media (max-width: 780px) {
+  .container {
+    margin-top: 35px;
+  }
+
+  .contato {
+    padding: 32px 25px;
+    border-radius: 16px;
+  }
+
+  .contato h2 {
+    font-size: 1.95rem;
+  }
+
+  input,
+  textarea {
+    padding: 12px;
+    border-radius: 10px;
+  }
+
+  .btn-enviar {
+    padding: 12px;
+    font-size: 1.05rem;
+  }
+}
+
+@keyframes contentLoad {
+  0% {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+main {
+  animation: contentLoad 0.9s ease-out forwards;
+}
+

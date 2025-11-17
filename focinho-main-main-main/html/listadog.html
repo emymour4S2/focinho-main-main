@@ -1,0 +1,117 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <title>Formulário de Adoção de Pet - Focinho Feliz</title>
+<body>
+    <header>
+  <div class="navbar">
+    <div class="nav-left">
+      <img id="nav-logo" src="../public/img/UNIPIAGET-Marca-Base.svg" alt="Logo Unipiaget">
+      <div class="nav-logo">
+        <span class="brand-name">Focinho Feliz</span>
+        <span class="brand-sub">Projeto UNIPIAGET</span>
+      </div>
+    </div>
+
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="serviços.html">Adote Já</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </div>
+</header>
+
+<div class="container">
+    <h2>Formulário de Interesse em Adoção</h2>
+
+    <form action="#" method="POST"> <fieldset>
+            <legend><h3>Seus Dados</h3></legend>
+            
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefone">Telefone (com DDD):</label>
+            <input type="tel" id="telefone" name="telefone" pattern="[0-9]{2} [0-9]{4,5}-[0-9]{4}" placeholder="Ex: 11 98765-4321" required>
+
+            <label for="cidade">Cidade/Estado:</label>
+            <input type="text" id="cidade" name="cidade" required>
+        </fieldset>
+
+        <fieldset>
+            <legend><h3>Seu Estilo de Vida</h3></legend>
+
+            <label for="tipo_moradia">Tipo de Moradia:</label>
+            <select id="tipo_moradia" name="tipo_moradia" required>
+                <option value="" disabled selected>Selecione</option>
+                <option value="casa_murada">Casa Murada/Com Quintal</option>
+                <option value="casa_sem_muro">Casa Sem Quintal</option>
+                <option value="apartamento_com_tela">Apartamento (com redes/telas)</option>
+                <option value="apartamento_sem_tela">Apartamento (sem redes/telas)</option>
+            </select>
+            
+            <label for="moradores">Quantas pessoas moram na sua casa?</label>
+            <input type="number" id="moradores" name="moradores" min="1" required>
+
+            <label for="pets_atuais">Você já tem outros pets?</label>
+            <div class="radio-group">
+                <input type="radio" id="pets_sim" name="tem_pets" value="sim" required> <label for="pets_sim">Sim</label>
+                <input type="radio" id="pets_nao" name="tem_pets" value="nao"> <label for="pets_nao">Não</label>
+            </div>
+
+            <label for="experiencia_pet">Qual sua experiência prévia com pets?</label>
+            <textarea id="experiencia_pet" name="experiencia_pet" rows="4" placeholder="Conte-nos sobre sua experiência em cuidar de animais."></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend><h3>Preferências de Pet</h3></legend>
+
+            <label for="especie_desejada">Qual espécie você deseja adotar?</label>
+            <div class="checkbox-group">
+                <input type="checkbox" id="pref_cachorro" name="pref_especie[]" value="cachorro"> <label for="pref_cachorro">Cachorro</label>
+                <input type="checkbox" id="pref_gato" name="pref_especie[]" value="gato"> <label for="pref_gato">Gato</label>
+                <input type="checkbox" id="pref_outros" name="pref_especie[]" value="outros"> <label for="pref_outros">Outros</label>
+            </div>
+
+            <label for="motivo_adocao">Por que você deseja adotar um pet?</label>
+            <textarea id="motivo_adocao" name="motivo_adocao" rows="3" required></textarea>
+        </fieldset>
+        
+        <button type="submit">Enviar Pedido de Adoção</button>
+        <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+    </form>
+</div>
+ <footer>
+        <div class="footer-container">
+            <div class="contatos">
+                <div class="texto">
+                    <img id="social-icons" class="ctt" src="../public/img/whatsapp.png" alt="WhatsApp">
+                    <span>(55) 4002-8922</span>
+                </div>
+                <div class="texto">
+                    <img id="social-icons"class="ctt" src="../public/img/email.png" alt="Email">
+                    <span>focinhofeliz@gmail.com</span>
+                </div>
+                <div class="texto">
+                    <img id="social-icons" class="ctt" src="../public/img/insta1.png" alt="Instagram">
+                </div>
+            </div>
+    
+            <p class="footer-copy">&copy; 2025 Focinho Feliz | Desenvolvido por estudantes da Universidade Piaget</p>
+        </div>
+    </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
